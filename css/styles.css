@@ -1,0 +1,93 @@
+h1{
+    font-family: "Trebuchet MS", Tahoma, Verdana;
+    background-color: thistle;
+    
+}
+
+h2 {
+    background-color:rgb(224, 255, 163);
+    font-size: 110%;
+    color: red;
+    width: 975px;
+    padding-bottom:5px;
+  padding-top:5px;
+
+  }
+
+  h3{
+background-color: wheat;
+width: 960px;
+
+  }
+
+  .cite{
+
+    background-color:khaki;
+    font-size: 110%;
+    color:indianred;
+    width: 975px;
+
+  }
+
+body {
+    font-family: "Trebuchet MS", Tahoma, Verdana;
+        margin-left: 10%;
+        margin-right: 10%;
+        border: 1px solid gray;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: lightcyan;
+        background-image: url(background.jpg);
+}
+
+
+
+ .fav_web{
+    padding:5px;
+    margin: 10px; 
+    list-style-type: circle;
+    list-style-position: inside;
+    background-color: turquoise;
+ }
+
+ li{
+    padding:2px;
+    margin: 4px;  
+  }
+
+  b{
+    background-color: tomato;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left: 1em;
+    padding-right: 1em;
+
+  }
+
+.quote{
+background-color: burlywood;
+font-size: larger;
+
+}
+
+.copyright{
+background-color:darksalmon;
+text-align: center;
+font-size: 110%;
+}
+
+p{
+
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+.career{
+      font-size: 100%;
+      padding-bottom:5px;
+    padding-top:5px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }

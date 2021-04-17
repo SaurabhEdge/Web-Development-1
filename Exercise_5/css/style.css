@@ -1,0 +1,58 @@
+.main_div{
+
+    width: 1000px;
+    margin-left:auto ;
+    margin-right:auto;
+   position: relative;
+    color:lightskyblue
+      
+    
+}
+
+body {
+    
+        background-color: lightskyblue;
+      
+}
+
+
+  
+
+.left-image{
+    font-family: Arial;
+    position: absolute;
+    top: -7%;
+    left: -5%;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: goldenrod;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin: 10%;
+    border-style: solid;
+    border-color:white;
+    color: black;
+
+}
+
+
+.below-image{
+    font-family: Arial;
+    background-color: lightblue;
+    text-align: center;
+   
+
+}
+
+.center-image{
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    border-color:white;
+    top: 50%;
+    left: 50%;
+    color: black;
+}

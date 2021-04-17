@@ -1,0 +1,453 @@
+  /* citation part  */
+.cite{
+
+  background-color:khaki;
+  font-size: 110%;
+  color:indianred;
+  width: 975px;
+  
+  }
+
+ 
+    /* pie chart dispay section */
+  #piechart{
+      float: left;
+  
+  }
+  
+  #piechart_1{
+  float:right;
+  
+  }
+  
+  #chart_div{
+    float: left;
+  }
+  
+  #chart_div_1{
+    float: right;
+  }
+  
+  #curve_chart{
+  
+    float: left;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: lemonchiffon;
+    font-family: Helvetica, sans-serif;
+    
+  }
+  
+    /* CSS transition part --> change the image if hover on front part */
+  
+  .flip-container {
+          margin: 40px;
+          perspective: 1000px;
+          display: inline-block;
+      }
+      .flip-container:hover .card {
+          transform: rotateY(180deg);
+      }
+      .card, .front_2, .back,.front_1,.front_4,.front_5,.front_6,.front_3 {
+          width: 300px;
+          height: 215px;
+      }
+      .card {
+          transition: 0.5s;
+          transform-style: preserve-3d;
+          position: relative;
+      }
+      .front_2, .back,.front_1,.front_3,.front_4,.front_5,.front_6 {
+          backface-visibility: hidden;
+          position: absolute;
+      }
+      .front_1 {
+          z-index: 1;
+          transform: rotateY(180deg);
+          background: url("../images/FC_1.JPG") no-repeat;
+      }
+      .front_2 {
+          z-index: 1;
+          transform: rotateY(180deg);
+          background: url("../images/FC_2.JPG") no-repeat;
+      }
+      .front_3 {
+          z-index: 1;
+          transform: rotateY(180deg);
+          background: url("../images/FC_3.JPG") no-repeat;
+      }
+      .front_4 {
+          z-index: 1;
+          transform: rotateY(180deg);
+          background: url("../images/FC_4.JPG") no-repeat;
+      }
+      .front_5 {
+          z-index: 1;
+          transform: rotateY(180deg);
+          background: url("../images/FC_5.JPG") no-repeat;
+      }
+      .front_6 {
+          z-index: 1;
+          transform: rotateY(180deg);
+          background: url("../images/FC_6.JPG") no-repeat;
+      }
+      .back {
+          z-index: 2; /* back side, placed above front */
+          transform: rotateY(0deg);
+          background: url("../images/Front.JPG") no-repeat;
+      }
+  
+    /* Timeline section css part */
+    .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content_timeline {
+    padding: 20px 30px;
+    background-color:darkgoldenrod;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* arrange content in collapsible way */
+
+  .collapsible {
+    background-color:indianred;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color:#b4d426;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-out;
+    background-color: #f1f1f1;
+  }
+  
+  .content_graph {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-out;
+    background-color: #474e5d;
+  }
+  
+  h1{
+  
+  text-align: center;
+  color:darkorange ;
+  font-size: xx-large;
+  background-color: lightgrey;
+  border-left: lemonchiffon;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  border-left: 10px solid darkgoldenrod;		
+  
+  
+  }
+  
+    /* copyright section */
+  .copyright{
+    background-color: burlywood;
+    text-align: center;
+    font-size: 110%;
+    padding: 0em;
+    }
+  
+  .right_head{
+  
+  float: right;
+  padding-left: 1.5em;
+  }
+  
+  .left_head{
+  
+  float: left;
+  padding-left: 1.5em;
+  }
+
+    /* Evolution section display css */
+  .section1{
+    background-color:#58a5a1;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+  .section2{
+    background-color:#37a4f6;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+
+  .section3{
+    background-color:#fece43;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+
+  .section4{
+    background-color:#f04b42;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+
+  .section5{
+    background-color:#cf9bcf;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+
+  .section6{
+    background-color:#f89846;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+
+  .section7{
+    background-color:#85e3af;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+
+  .section8{
+    background-color:#6dd4f8;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+
+  .section9{
+    background-color:#ff6f61;
+    padding-bottom: 11em;
+    padding-top: 1em;
+    margin: 2em; 
+     color:white;
+        
+  }
+
+  .sidebyside_1,.sidebyside_3,.sidebyside_5,.sidebyside_7,.sidebyside_9{
+    text-align: justify;
+    color: white; 
+  }  
+
+  .sidebyside_2,.sidebyside_4,.sidebyside_6,.sidebyside_8{
+    text-align: left;
+    color: white; 
+    margin-left: 2em;
+  }  
+
+
+  #you_tube{
+
+    width: 1200px;
+    height: 500px;
+  }
+
+  #piechart{
+    width: 605px;
+    height: 280px;
+ 
+  }
+
+  #piechart_1{
+    width: 605px;
+    height: 280px;
+   
+
+  }
+
+  #chart_div{
+
+    width: 605px;
+    height: 300px;
+
+  }
+
+  #chart_div_1{
+    width: 605px;
+    height: 300px;
+
+  }
+  
+
+    /* Media query for max-width 800 px for all screens */
+@media all and (max-width: 800px) {
+
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+  #you_tube{
+
+    width: 750px;
+    height: 300px;
+  }
+
+  
+  #piechart{
+    width: 505px;
+    height: 280px;
+ 
+  }
+
+  #piechart_1{
+    width: 505px;
+    height: 280px;
+   
+
+  }
+
+  #chart_div{
+
+    width: 505px;
+    height: 300px;
+
+  }
+
+  #chart_div_1{
+    width: 505px;
+    height: 300px;
+
+  }
+
+
+
+}
+@media print {
+
+  p{
+  font-family: georgia, serif;
+    font-size: 14px;
+    color: blue;
+}
+}

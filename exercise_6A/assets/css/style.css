@@ -1,0 +1,95 @@
+h1{
+    font-family: "Trebuchet MS", Tahoma, Verdana;
+    background-color:sandybrown;
+    text-align: center;
+    padding-bottom:5px;
+  padding-top:5px;
+     
+}
+.top
+{
+text-align: right;
+
+}
+
+body {
+  font-family: arial, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid gray;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-image: url('back.jpeg');
+  
+     
+}
+
+.printonly{
+  display: none;
+}
+
+
+.home_profile{
+
+  
+  padding-left: 1em;
+ 
+
+}
+
+.right {
+  display: block;
+  margin-left: 50%;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.no_navBar{
+  font-family: "Trebuchet MS", Tahoma, Verdana;
+  margin-left: 0%;
+  margin-right: 0%;
+  border: 1px solid gray;
+  padding-left: 1px;
+  padding-right: 1px;
+  background-color: burlywood;
+ }
+
+ h3{
+background-color:mistyrose;
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+
+ }
+
+ .copyright{
+  background-color: burlywood;
+  text-align: center;
+  font-size: 110%;
+  }
+
+  .social{
+   
+    margin-left: 0%;
+    margin-right: 0%;
+    white-space: initial;
+    padding-left: 1px;
+    padding-right: 1px;
+
+
+  }
+
+  .cite{
+
+    background-color:khaki;
+    font-size: 110%;
+    color:indianred;
+    width: 975px;
+
+  }
+
+  .profile{
+    background-color:mistyrose ;
+  }
+

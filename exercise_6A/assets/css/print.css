@@ -1,0 +1,39 @@
+body {
+    font-family: serif; 
+    background-color:#ffffff;
+     color:#000000;
+    }
+
+.no_navBar {
+    display: none;
+}
+
+.profile{
+    display: none;
+
+}
+
+.footer_part{
+
+    display: none;
+}
+
+.screenonly{
+
+    display: none;
+}
+
+.printonly {font-size: 36px;}
+
+img{
+    display: none;
+}
+
+h1{
+    font-family: "Trebuchet MS", Tahoma, Verdana;
+    background-color:sandybrown;
+    text-align: center;
+    padding-bottom:5px;
+  padding-top:5px;
+     
+}
